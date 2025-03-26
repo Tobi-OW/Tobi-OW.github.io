@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="styles.css" rel="stylesheet"type="text/css">
+
+    <meta charset="UTF-8">
+    <title>The Herta guide</title>
+    <style>
+        .relative {
+            position: relative;
+            right: 100px;
+            border: 15px solid #FFD700
+        }
+    </style>
+
+</head>
+<body>
+<div class="element">
+<h1>THE HERTA BUILD GUIDE</h1>
+<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQIcNLu94VRgui0es9QzmLV2XYko4RzE3Egt4X7pStPRhbNiv-fu0-lStM&usqp=CAE&s" width = "300" height = "390" alt="sundaysplash">
+<h1>MAIN RELIC SET</h1>
+<img src="https://honkai-star-rail.fandom.com/wiki/Scholar_Lost_in_Erudition", width="400" height = "400" alt="hertarelic">
+<div id="right-column">
+<h1>Go for the following main stats</h1>
+<ol>
+    <li>Body- crit rate/crit damage</li>
+    <li>Feet- atk/speed</li>
+    <h1>and focus on these sub-stats</h1>
+    <li>atk, crit dmg, crit rate, speed</li>
+</ol>
+</div>
+
+<h1>planar ornament set: Izumo Gensei and Takama Divine Realm</h1>
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS7mbLZtC0ZvtQBjxpq7_ssMa92UJtJNnGyQkXkg3BgqXWYAUINK7DC1jU&usqp=CAE&s", width="100", height = "100" alt="sundayplanar">
+    <div id="right-column">
+        <p>ice dmg bonus orb</p>
+        <p>atk rope</p>
+        <h1>potential teammates</h1>
+        You want a secondary erudition unit to activate her passive:
+        <ol>
+            <li>anaxa</li>
+            <li>jade</li>
+            <li>mini herta</li>
+            <li>serval</li>
+        </ol>
+        for your support any of these will do:
+        <ol>
+            <li>tribbie</li>
+            <li>robin</li>
+            <li>remembrance trailblazer</li>
+            <li>Sunday</li>
+        </ol>
+        and as a sustain you can use any that either do aoe damage or provide energy
+        <ol>
+            <li>lingsha</li>
+            <li>aventurine</li>
+            <li>huohuo</li>
+        </ol>
+    </div>
+        <h1>Eidolon or lightcone?</h1>
+    <form name="question">
+        <button type="button" onclick="validate()">answer</button>
+        <p id="box">do you play on generally sp negative teams?</p>
+        <input type="text" id="firstAnswer" name="answer1" placeholder="Type yes or no">
+    <p>do you have S5 "Today Is Another Peaceful Day", S5 Geniuses' repose, S1 Night On The Milky Way or s1 Before Dawn?</p>
+            <input type="text" id="secondAnswer" name="answer2" placeholder="Type yes or no">
+        <p>do you lack many generalist dps?</p>
+        <input type="text" id="thirdAnswer" name="answer3" placeholder="Type yes or no">
+        <button type="button" onclick="validate()">Check Answers</button>
+    </form>
+<div>
+<div id="imagecontainer"></div>
+<div id="textcontainer"></div>
+</div>
+</div>
+
+<div id="result"></div>
+
+<script>
+    function validate() {
+        var firstAnswer = document.getElementById("firstAnswer").value.toLowerCase();
+        var secondAnswer = document.getElementById("secondAnswer").value.toLowerCase();
+        var thirdAnswer = document.getElementById("thirdAnswer").value.toLowerCase();
+        if (firstAnswer === "yes" && secondAnswer === "yes" && thirdAnswer === "yes") {
+            alert("Choose e1, while sp negativity is bad, the damage increase youd get from the lightcone isnt as much as the increase youd get from her first eidolon");
+        } else if (firstAnswer === "no" && secondAnswer === "no" && thirdAnswer === "yes") {
+            alert("Choose any but id reccomend s1 for the comfort");
+        } else if (firstAnswer === "yes" && secondAnswer === "no" && thirdAnswer === "yes") {
+            alert("Choose Lightcone, it helps keep her teams sp positive and will provide a large damage boost");
+        }
+        else if (firstAnswer === "no" && secondAnswer === "yes" && thirdAnswer === "yes") {
+            alert("Choose e1 for easier stacking on any form of content");
+        }
+        else{
+            alert("choose anything, maybe try for a different character?");
+        }
+    }
+</script>
+</body>
+</html>
+
+

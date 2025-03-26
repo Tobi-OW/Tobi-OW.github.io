@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>bookings.html</title>
+</head>
+<body>
+
+
+Upcoming productions
+
+<ol>
+    <li>Macbeth</li>
+    <li>Blood Brothers</li>
+    <li>An Inspector Calls</li>
+
+</ol>
+<a href="bookings.html">Book tickets</a>
+<div id="prices">price</div>
+
+
+<script>
+    var date = new Date() ;
+    var daycode = 2;
+    var price="";
+
+    if (daycode == 1 || daycode == 2) {
+        price = 15
+    }
+    else {
+        price = 20
+    }
+    documenrt.getElementById("prices").innerHTML = price;
+    </html>
+
+</script>
+</body>
+</html>

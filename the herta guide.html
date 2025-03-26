@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link href="styles.css" rel="stylesheet"type="text/css">
+
+  <meta charset="UTF-8">
+  <title>Sunday guide</title>
+  <style>
+    .relative {
+      position: relative;
+      right: 100px;
+      border: 15px solid #FFD700
+    }
+  </style>
+
+</head>
+<body>
+<div class="element">
+  <h1>SUNDAY BUILD GUIDE</h1>
+  <img src="https://s1.zerochan.net/Sunday.600.4325635.jpg" width = "300" height = "390" alt="sundaysplash">
+  <h1>MAIN RELIC SET</h1>
+  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRYXjWi3VABoBbS8G4jtBt-nL6xsoUK_TEvnQn_4FXVAppTVQ1763_r6bQ&usqp=CAE&s", width="400" height = "400" alt="sundayrelic">
+  <div id="right-column">
+    <h1>Go for the following main stats</h1>
+    <ol>
+      <li>Body- crit damage <span class="red-text">Important!</span></li>
+      <li>Feet- speed</li>
+    </ol>
+  </div>
+
+  <h1>planar ornament set</h1>
+  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-ej_STpTs9_nRgG8SP5CaEWgu-sDs3slpNme358FxGswrXiCmC9iidtE&usqp=CAE&s", width="100", height = "100" alt="sundayplanar">
+  <div id="right-column">
+    <p>Hp orb</p>
+    <p>energy regeneration rope</p>
+  </div>
+  <h1>Eidolon or lightcone?</h1>
+  <form name="question">
+    <button type="button" onclick="validate()">answer</button>
+    <p id="box">do you have (or plan on rolling for) a summon dps or character on the path of remembrance</p>
+    <input type="text" id="firstAnswer" name="answer1" placeholder="Type yes or no">
+    <p>do you have sparkles lightcone (Earthly Escapade) or Bronyas lightcone (But The Battle Isn't Over Yet)?</p>
+    <input type="text" id="secondAnswer" name="answer2" placeholder="Type yes or no">
+    <button type="button" onclick="validate()">Check Answers</button>
+  </form>
+  <div>
+    <div id="imagecontainer"></div>
+    <div id="textcontainer"></div>
+  </div>
+</div>
+
+<div id="result"></div>
+
+<script>
+  function validate() {
+    var firstAnswer = document.getElementById("firstAnswer").value.toLowerCase();
+    var secondAnswer = document.getElementById("secondAnswer").value.toLowerCase();
+    if (firstAnswer === "yes" && secondAnswer === "yes") {
+      alert("Choose Eidolon, its a good support for your characters and you have aa good lightcone already");
+    } else if (firstAnswer === "no" && secondAnswer === "no") {
+      alert("Choose Lightcone, its a significant upgrade over whatever lightcone youre using and e1 isnt necessary for you");
+    } else if (firstAnswer === "yes" && secondAnswer === "no") {
+      alert("Choose Lightcone, even if e1 is beneficial for you the lightcone is overall a larger performance increase");
+    }
+    else{
+      alert("choose anything but id reccomend lightcone as its a bigger increase for you");
+    }
+  }
+</script>
+</body>
+</html>
+
+
